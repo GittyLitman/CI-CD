@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: 📂 Checkout code
         uses: actions/checkout@v4
 
-      - name: Check for certificate installation lines
+      - name: 🔒️ Check for certificate installation lines
         run: |
           while IFS= read -r file; do
             if grep -q "https://netfree.link/dl/unix-ca.sh /home/netfree-unix-ca.sh" "$file"; then
